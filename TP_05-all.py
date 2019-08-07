@@ -1,4 +1,4 @@
-﻿
+
 #문제 5-1
 print('[문제 5-1]')
 def maverage(a,b):
@@ -48,8 +48,9 @@ print('\n')
 #문제 5-4
 print('[문제 5-4]')
 def get_BMI(kg1,cm1):
-    bmi = kg1/cm1
-    a=[18.5, 25.0, 30.0, 300.0]
+    m1 = cm1*0.01
+    bmi = kg1/(m1*m1)
+    a=[18.5, 25.0, 30.0, bmi+1]
     b=['마른체형','표준','비만','고도비만']
     for i in range(0,4):
         if bmi < a[i]:
@@ -60,8 +61,9 @@ print('\n')
 #문제 5-5
 print('[문제 5-5]')
 def get_BMI(kg1,cm1):
-    bmi = kg1/cm1
-    a=[18.5, 25.0, 30.0, 300.0]
+    m1 = cm1*0.01
+    bmi = kg1/(m1*m1)
+    a=[18.5, 25.0, 30.0, bmi+1]
     b=['마른체형','표준','비만','고도비만']
     for i in range(0,4):
         if bmi < a[i]:
@@ -75,6 +77,7 @@ cm1=int(input())
 bmi=get_BMI(kg1,cm1)
 print('\n당신의 BMI는 : ',bmi[0],'이고.\n당신은 ',bmi[1],'입니다.\n')
 print('\n')
+
 
 #문제 5-6
 print('[문제 5-6]')
